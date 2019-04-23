@@ -26,3 +26,7 @@ if __name__ == '__main__':
     found = binary_search(data, target, 0, len(data) -1)
 
     print(found)
+    if found == True:
+        print('The number: {} is in the list'.format(target))
+    else:
+        print('The number: {} is not in the list'.format(target))
