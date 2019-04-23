@@ -10,6 +10,7 @@ def binary_search(data, target, low, high):
             high = mid - 1
         else:
             low = mid + 1
+    return False
 
 
 if __name__ == '__main__':
