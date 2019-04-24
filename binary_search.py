@@ -22,8 +22,13 @@ if __name__ == '__main__':
 
     print(data)
 
-    target = int(input('What number would you like to find?'))
-    found = binary_search(data, target, 0, len(data) -1)
+    target = None
+    while not target:
+        try:
+            target = int(input('What number would you like to find?  '))
+            found = binary_search(data, target, 0, len(data) -1)
+        except ValueError:
+            print('Command incorret please use a integer')
 
     print(found)
     if found == True:
